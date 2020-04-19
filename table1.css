@@ -1,0 +1,24 @@
+
+body {
+ font-family: sans-serif;
+
+}
+
+th, td {
+ border: 2px solid black;
+
+}
+
+table {
+ border: 3px solid black;
+ border-collapse: collapse;
+ padding: 3px;
+ width: 50%;
+ text-align: center;
+}
+th {
+ background-color: lightgray;
+}
+{}
+{}
+{}
