@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+
+}
+body{
+    
+    background-color: wheat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*position: relative; not required when positin fixed is usedin the footer*/
+    padding-bottom: 46px; /*adds the height of the footer so that it doesn't affect the body*/
+    min-height: 100vh;/*not required also when position is fixed at the footer*/
+  
+
+}
+
+header{
+    background-color: violet;
+    padding: 15px;
+    text-align: center;
+}
+
+main{
+    width: 90vh;
+    margin: 0 auto;
+    padding: 20px 20px;
+    /*min-height: calc(100vh-86px-48px);*/
+}
+article{
+    background-color: rgb(130, 216, 238);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+article:last-child{
+    margin-bottom: 0;
+}
+article h3 {
+    margin: 10px 25px 0;
+}
+
+article p{
+    margin-top: 16px;
+    line-height: 24px;
+}
+
+
+/* the footer layout begins here*/
+footer{
+    background-color: violet;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer li{
+    display: inline;
+    padding: 10px;
+}

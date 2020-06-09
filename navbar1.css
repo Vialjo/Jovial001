@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+li, a, button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between ;/*pushes the left and right items to the far edges and the item in the middle will be evenly spaced*/
+    align-items: center;
+    padding: 10px;
+    background-color: aqua;
+    font-size: 12px;
+
+}
+.logo{
+    cursor: pointer;
+}
+
+.logo{
+    width: 90px;
+    border-radius: 4px;
+   
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s ;
+}
+.nav-links li a:hover{
+    color: chartreuse;
+}
+
+button{
+    padding: 2px 6px;
+    background-color: rgb(197, 96, 23, 1);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+       
+}
+
+button:hover{
+    background-color: rgba(13, 224, 59, 0.8);
+}

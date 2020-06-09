@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-color: khaki;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative; /*not required when positin fixed is usedin the footer*/
+    padding-bottom: 66px; /*adds the height of the footer so that it doesn't affect the body*/
+    min-height: 100vh;/*here as well*/
+    
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 14vh;
+    background-color: lawngreen;
+
+}
+.main1{
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+section{
+    margin: 10px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    background-color: lightblue;
+    
+}
+section h2{
+    text-align: center;
+    padding: 4px;
+}
+section p{
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+    
+
+}
+
+
+
+
+
+
+/*here goes the footer layout*/
+footer{
+    min-height: 8vh;
+    background-color: lawngreen;
+    position: absolute;
+    bottom: 0;/*required when the position is at absolute*/
+    width: 100%; /*here as well*/
+}
+
+.footer-io{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+h5{
+    text-align: center;
+    padding-bottom: 8px;
+    line-height: 20px;
+}

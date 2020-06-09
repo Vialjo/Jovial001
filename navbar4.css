@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(design1.jpg);
+    height: 500px; /*when @mediaquery min-height: 1062px, it takes all the space for display*/;
+    /*background-color: khaki;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.menu-bar{
+    background: rgb(4, 136, 4);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display:inline-flex;
+    /*justify-content: space-around;*/
+    color:#fff;
+    
+    
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 14px;
+    padding: 8px;
+
+}
+.menu-bar ul li a{ 
+    color: #fff;
+}
+.active, .menu-bar ul li:hover {
+    background: rgb(40, 230, 40);
+    border-radius: 3px;
+}
+
+.menu-bar .fa {
+    margin-right: 2px;
+
+}
+
+/*HERE GOES THE SUB-MENU DISPLAY*/
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background: rgb(4, 136, 4);
+    margin-top: 8px;
+    margin-left:-8px
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{ /*vertical display*/
+    display: block;
+    margin: 8px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+    color: turquoise;
+}
+
+/*SUB-MENU 2 DISPLAY*/
+.sub-menu2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    background: rgb(4, 136, 4);
+    margin-top: 8px;
+    margin-left:-8px
+}
+
+.menu-bar ul li:hover .sub-menu2 ul{ /*vertical display*/
+    display: block;
+    margin: 8px;
+}
+
+.menu-bar ul li:hover .sub-menu2 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu2 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu2 ul li a:hover{
+    color: turquoise;
+}
+
+.far fa-right {
+    float: right;
+}
+
+.sub-menu3 {
+    display: none;
+}
+
+.sub-menu2 ul li:hover .sub-menu3{
+    display: block;
+    position: absolute;
+    background: rgb(165, 206, 18);
+    margin-top: -45px;
+    margin-left: 130px;
+}
+
+.sub-menu2 ul li:hover .sub-menu3 ul{ /*vertical display*/
+    display: block;
+    margin: 8px;
+}
+
+
